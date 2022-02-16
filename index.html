@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assest/style.css">
   
   <title>Frontend Mentor | Todo app</title>
 
@@ -16,18 +17,34 @@
 </head>
 <body>
 
-  Todo
+  <div class="container">
+    <h1>Programming Language</h1>
+    <div class="tabs" role="tabs" aria-label="Programming Language">
+      <div role="tablist">
+        <button role="tab" aria-selected="true" id="javascript">Javascript</button>
+        <button role="tab" aria-selected="false" id="python">Python</button>
+        <button role="tab" aria-selected="false" id="php">PHP</button>
+      </div>
 
-  <!-- Add dynamic number --> items left
+      <div role="tabpanel" aria-labelledby="javascript">
+        <h2>This is Javascript</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptate enim blanditis sapiente 
+          laborum,ut repudiande facere temporibus quia voluptatum,consequatur exercitationem recusandae?
+          Repellat minus quod veniam numquam voluptate quo sed vertatis cumque fugit quam!Fuga officia odit inventore
+          quos recusandae at laudantium reprehenderit suscipit hic
+        </p>
+         
+        <div role="tabpanel" aria-labelledby="python">
+          <h2>This is python</h2>
+          <p>Lorem ipsum,dolor sit amet consectetur adipisicing elit. Ut doloremque ipsum,eveniet numquam pariatur a obcaecati cupiditate</p>
+        </div> 
+      </div>
+    </div>
+    </div>
 
-  All
-  Active 
-  Completed
+  
 
-  Clear Completed
-
-  Drag and drop to reorder list
-
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
